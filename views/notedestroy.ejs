@@ -1,0 +1,10 @@
+<% include top %>
+<form method="POST" action='notedodestroy'>
+    <input type='hidden' name='notekey' value='<%= notekey ? notekey : "" %>'>
+    <input type="hidden" name="id" value='<%= id? id : ""  %>'>
+    <p>Delete <%= title %> ?</p>
+    <br/>
+    <input type="submit" value="DELETE" />
+    <a href="/noteview?id=<%= id %>">Cancel</a>
+</form>
+<% include bottom %>

@@ -1,0 +1,41 @@
+{
+  "name": "todo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node ./src/app.js",
+    "build": "babel src -d build",
+    "start_babel": "babel-node --presets env ./src/app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^5.0.0-beta.6",
+    "nodemon": "^2.0.7"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThangDao0611/todo-backend-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThangDao0611/todo-backend-new/issues"
+  },
+  "homepage": "https://github.com/ThangDao0611/todo-backend-new#readme",
+  "description": ""
+}

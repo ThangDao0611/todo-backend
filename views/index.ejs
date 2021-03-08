@@ -1,0 +1,12 @@
+<% include top %>
+<%
+    if(keys) {
+        keys.forEach(function(key) {
+            
+            %><p><%= key.id %>:
+                <a href="/noteview?id=<%= key.id %>"><%= key.title %></a>
+            </p><%
+        });
+    }
+%>
+<% include bottom %>
